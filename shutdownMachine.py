@@ -93,7 +93,7 @@ def opcao():
 	botaoReiniciar = Button(telaOpcao, text="Reinicializar", command=reiniciar)
 	botaoReiniciar.pack()
 	telaOpcao.mainloop()
-rules = Label(inicial, text="Como utilizar:\n 1° - Escolha uma opção\n 2° - Digite o nome da máquina na rede\n3° - Execute a função desejada\n(Lembrando que demora por padrão 15 segundos para desligar/reiniciar)\nExiste um botao de cancelar desligamento/reinicialização\nUse-o com sabedoria.",font=("Arial", 12))
+rules = Label(inicial, text="Como utilizar:\n 1° - Escolha uma opção\n 2° - Digite o nome da máquina na rede(Caso deixe em branco o computador a ser desligado será o seu)\n3° - Execute a função desejada\n(Lembrando que demora por padrão 15 segundos para desligar/reiniciar)\nExiste um botao de cancelar desligamento/reinicialização\nUse-o com sabedoria.",font=("Arial", 12))
 rules.pack()
 warning = Label(inicial, text="Não me responsabilizo por quaisquer danos causados com esse programa.\nEsse programa foi feito unicamente para fins didaticos", font=("Arial", 12), fg="red")
 warning.pack()
