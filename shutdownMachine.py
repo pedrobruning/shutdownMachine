@@ -17,9 +17,6 @@ def opcao():
 		telaOpcao.destroy()
 		root = Tk()
 		root.title("ShutdownMachine")
-		#The app makes a .bat file to execute after, I tried to use os.system but it seems to not accept more than 3 commands
-		#This was the way that I found to make the app run. 
-		#I expect to solve this in a near future
 		def execute():
 			with open('desligar.bat', 'w') as file:
 				file.write('shutdown -s -t 15 -c "Desligando em 15 segundos" -m \\' + '\\' + e.get())
